@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mulish&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+.bg-style{
+  /* background-image: url(/src/Images/sald.jpg);  */
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover;
+  width:100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  opacity: 1;
+}
+ .transparent-bg{
+  width:100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+z-index: 998;
+  height: 100vh;
+background-image: linear-gradient(rgb(58 54 54 / 90%),rgb(31 24 24 / 90%));
+}
+
+/* ----------------------------------------------------------------
+-----------------------------------------------------------------
+                            slide bar lining
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+.slide-line{
+ text-align: center;
+}
+.slide-line button{
+  position: relative;
+  top: 216px;
+  margin-left: 10px;
+  background-color: #958e88;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.slide-line button:hover{
+border-color: white;
+background-color: #d61c22;
+}
+
+
+
+
+
+
+.main-nav{
+  z-index: 999;
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+}
+/* ----------------------------------------------------------------
+-----------------------------------------------------------------
+                            Logo style
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+.logo{
+  display: grid;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+  border: 2px solid white;
+  font-weight: 600;
+  margin: 34px 23px;
+  padding: 8px 13px;
+  border-radius: 14px;
+  height: 55px;
+    width: 70px;
+    color: white;
+}
+/* ----------------------------------------------------------------
+-----------------------------------------------------------------
+                            Menubar style
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+.menu-bar{
+  grid-column: 3/4;
+  margin: 52px 3px;
+  font-size: 1.2rem;
+}
+.menu-bar ul{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+/* ----------------------------------------------------------------
+-----------------------------------------------------------------
+                            Social Media icons style
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+.social-media{
+  grid-column: 4/5; 
+}
+.social-media ul{
+  margin: 52px 3px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: .2fr .2fr .2fr;
+  justify-content: flex-end;
+  text-align: right;
+}
+img, svg{
+  color: white;
+}
+
+/* ----------------------------------------------------------------
+-----------------------------------------------------------------
+                             Section styling
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+
+
+
+.section-styling{
+  text-align: center;
+  position: relative;
+  top: 80px;
+  color: white;
+  z-index: 999;
+}
+.section-styling h1{
+  font-size: 3rem;
+  font-family: 'Croissant One', cursive;
+  letter-spacing: 10px;
+}
+.section-styling h1 span{
+  font-size: 4.5rem;
+  font-family: 'Mulish', sans-serif;
+}
+.btn{
+  color:red;
+  position: relative;
+  top:50px;
+  background-color: white;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  height: 49px;
+  width: 125px;
+  border-color: white;
+  cursor:pointer;
+  outline: none;
+}
+.btn:hover{
+  color: white;
+  background-color: red;
+}
+
+/* ----------------------------------------------------------------
+-----------------------------------------------------------------
+                            Next  welcome Section styling
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+.bg1-pattern{
+padding-bottom:105px ;
+padding-top:120px ;
+}
+.tit2{
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}
+.tit3{
+  font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.txt4{
+  font-weight: 400;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a{
+  text-decoration: none;
+}
+.wrap-pic-welcome{
+  border-radius: 10px;
+  max-width: 390px;
+}
+.hov-img-zoom {
+  display: block;
+  overflow: hidden;
+}
+
+.hov-img-zoom img:hover {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.5); 
+}
+img{
+  transition: transform .5s; /* Animation */
+vertical-align: middle;
+    border-style: none;
+}
+/* ----------------------------------------------------------------
+-----------------------------------------------------------------
+                            Responsive Website
+-----------------------------------------------------------------
+----------------------------------------------------------------- */
+@media (max-width:375px) {
+
+  .section-styling h1{
+    font-size: 2rem;
+  }
+  
+.section-styling h1 span {
+    font-size: 2rem;
+}
+  .btn{
+  height: 40px;
+  width: 104px;
+  font-size: 2rem;
+  }
+  .logo{
+  height: 47px;
+    width: 59px;
+  }
+}
+
+
+
+
+
+
+
